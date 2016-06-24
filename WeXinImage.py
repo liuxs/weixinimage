@@ -9,7 +9,6 @@ class WeXinImage:
         with open(datfile, 'rb') as f:
             buf = bytearray(f.read())
         buflist=list(buf)
-        print buflist
         for i in range(len(buflist)):
             buflist[i] = self.replacestr(hex(buflist[i]))
             buflist[i]=int(buflist[i],16)
