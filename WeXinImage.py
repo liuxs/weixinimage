@@ -45,7 +45,7 @@ class WeXinImage:
         return temp
 if __name__ == '__main__':
     import sys
-    datfile = sys.argv[:2]
+    datfile = sys.argv[1]
     try:
         WeXinImage(datfile)
     except Exception as e:
